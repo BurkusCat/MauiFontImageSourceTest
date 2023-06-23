@@ -8,6 +8,23 @@
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
+            
+            <Image BackgroundColor="#D1D1D1" 
+               Source="{FontImage &#xf30c;, FontFamily=ionicons, Size=44}" 
+               HeightRequest="44" />
+
+            <Image BackgroundColor="#D1D1D1" 
+               HeightRequest="44" >
+                <Image.Source>
+                    <FontImageSource Glyph="&#xf30c;"
+                         FontFamily="ionicons"
+                         Size="44" />
+                </Image.Source>
+            </Image>
+
+            <Label Text="Hello, World!" FontSize="64" FontFamily="OpenSansRegular" />
+
+            <Label Text="Hello, World!" FontSize="64" FontFamily="OpenSansSemibold" />
 
             <Image
                 Source="dotnet_bot.png"
