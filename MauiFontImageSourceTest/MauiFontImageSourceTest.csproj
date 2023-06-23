@@ -58,7 +58,19 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiFont Remove="Resources\Fonts\ionicons.ttf" />
+	  <MauiFont Remove="Resources\Fonts\OpenSans-Regular.ttf" />
+	  <MauiFont Remove="Resources\Fonts\OpenSans-Semibold.ttf" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Remove="Resources\Fonts\ionicons.ttf" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="Resources\Fonts\ionicons.ttf" />
+	  <EmbeddedResource Include="Resources\Fonts\OpenSans-Regular.ttf" />
+	  <EmbeddedResource Include="Resources\Fonts\OpenSans-Semibold.ttf" />
 	</ItemGroup>
 
 	<ItemGroup>
