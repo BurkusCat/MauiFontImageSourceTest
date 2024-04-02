@@ -26,6 +26,17 @@
                 </Image.Source>
             </Image>
 
+            <Button
+                BackgroundColor="CornflowerBlue"
+                Text="Button">
+                <Button.ImageSource>
+                    <FontImageSource
+                        FontFamily="ionicons"
+                        Glyph="&#xf30c;"
+                        Size="44" />
+                </Button.ImageSource>
+            </Button>
+
             <Label
                 FontFamily="OpenSansRegular"
                 FontSize="64"
