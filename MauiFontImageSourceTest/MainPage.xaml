@@ -1,56 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiFontImageSourceTest.MainPage">
+<ContentPage
+    x:Class="MauiFontImageSourceTest.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="Gray">
 
     <ScrollView>
         <VerticalStackLayout
-            Spacing="25"
             Padding="30,0"
+            Spacing="25"
             VerticalOptions="Center">
-            
-            <Image BackgroundColor="#D1D1D1" 
-               Source="{FontImage &#xf30c;, FontFamily=ionicons, Size=44}" 
-               HeightRequest="44" />
 
-            <Image BackgroundColor="#D1D1D1" 
-               HeightRequest="44" >
+            <Image
+                HeightRequest="44"
+                Source="{FontImage &#xf30c;,
+                                   FontFamily=ionicons,
+                                   Size=44}" />
+
+            <Image HeightRequest="44">
                 <Image.Source>
-                    <FontImageSource Glyph="&#xf30c;"
-                         FontFamily="ionicons"
-                         Size="44" />
+                    <FontImageSource
+                        FontFamily="ionicons"
+                        Glyph="&#xf30c;"
+                        Size="44" />
                 </Image.Source>
             </Image>
 
-            <Label Text="Hello, World!" FontSize="64" FontFamily="OpenSansRegular" />
+            <Label
+                FontFamily="OpenSansRegular"
+                FontSize="64"
+                Text="Hello, World!" />
 
-            <Label Text="Hello, World!" FontSize="64" FontFamily="OpenSansSemibold" />
+            <Label
+                FontFamily="OpenSansSemibold"
+                FontSize="64"
+                Text="Hello, World!" />
 
             <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
                 HeightRequest="200"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                Source="dotnet_bot.png" />
 
             <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1"
+                Text="Hello, World!" />
 
             <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
                 FontSize="18"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                SemanticProperties.HeadingLevel="Level2"
+                Text="Welcome to .NET Multi-platform App UI" />
 
             <Button
                 x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Text="Click me" />
 
         </VerticalStackLayout>
     </ScrollView>
