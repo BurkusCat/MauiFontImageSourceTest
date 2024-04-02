@@ -32,10 +32,6 @@
 		<!-- Disable MSIX -->
 		<WindowsPackageType>None</WindowsPackageType>
 		<WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
-		<Platforms>x64</Platforms>
-		<Platform>x64</Platform>
-		<RuntimeIdentifiers>win10-x64</RuntimeIdentifiers>
-		<RuntimeIdentifier>win10-x64</RuntimeIdentifier>
 		<WindowsAppSdkDeploymentManagerInitialize>false</WindowsAppSdkDeploymentManagerInitialize>
 
 		<!-- Uncomment to use MAUI nightlies https://github.com/dotnet/maui/wiki/Nightly-Builds -->
